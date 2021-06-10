@@ -3,9 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Child } from '../../interfaces/child'
 
-const url = 'https://joy-children-home.herokuapp.com/api/sponsers/';
-const updateUrl = 'https://joy-children-home.herokuapp.com/api/sponsers/update/';
-const deleteUrl = 'https://joy-children-home.herokuapp.com/api/sponsers/delete/';
+const url = 'https://joy-children-home.herokuapp.com/api/children/';
+const updateUrl = 'https://joy-children-home.herokuapp.com/api/children/update/';
+const deleteUrl = 'https://joy-children-home.herokuapp.com/api/children/delete/';
 
 @Injectable({
   providedIn: 'root'

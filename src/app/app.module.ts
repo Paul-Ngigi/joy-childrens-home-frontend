@@ -14,6 +14,7 @@ import { AddSponserComponent } from './components/add-sponser/add-sponser.compon
 import { AddAdopterComponent } from './components/add-adopter/add-adopter.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HomeComponent } from './components/home/home/home.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AddSponserComponent,
     AddAdopterComponent,
     NavbarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

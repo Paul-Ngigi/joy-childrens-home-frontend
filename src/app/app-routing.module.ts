@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
+import { AuthenticationComponent } from './components/authentication/authentication.component'
+import { HomeComponent } from './components/home/home/home.component'
 import { ChildrenComponent } from './components/children/children.component'
 import { SponsersComponent } from './components/sponsers/sponsers.component'
 import { AdoptersComponent } from './components/adopters/adopters.component'
@@ -11,6 +14,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component'
 
 
 const routes: Routes = [
+  { path: '', component: AuthenticationComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'children', component: ChildrenComponent },
   { path: 'register-child', component: AddChildComponent },
   { path: 'adopters', component: AdoptersComponent },
@@ -19,7 +24,7 @@ const routes: Routes = [
   { path: 'register-sponser', component: AddSponserComponent },
   { path: '**', component: NotFoundComponent },
 
-  // { path: '', redirectTo:"", pathMatch:"full"},
+  // { path: 'auth', redirectTo:"", pathMatch:"full"},
 ];
 
 @NgModule({

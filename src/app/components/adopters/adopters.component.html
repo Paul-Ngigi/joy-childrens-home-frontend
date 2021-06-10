@@ -1,8 +1,8 @@
-<!-- <ng-progress></ng-progress>
+<ng-progress></ng-progress>
 <div class="container mt-3">
     <div class="row">
         <hr class="success">
-        <h2 class=" p-2 text-center">Children Data</h2>
+        <h2 class=" p-2 text-center">Adopters Data</h2>
         <hr class="success">
         <table class="table table-success table-striped table-hover p-3">
             <thead>
@@ -12,27 +12,29 @@
                 <th scope="col">Last Name</th>
                 <th scope="col">Surname</th>
                 <th scope="col">Gender</th>
-                <th scope="col">Age</th>
-                <th scope="col">Talent</th>
-                <th scope="col">Adopter</th>
-                <th scope="col">Sponser</th>
-                <th scope="col">Joiner At</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Id Number</th>
+                <th scope="col">Location</th>
+                <th scope="col">Marital Status</th>
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor='let item of child'>
+              <tr *ngFor='let item of adopter'>
                 <th scope="row">{{item.id}}</th>
                 <td>{{item.first_name}}</td>
-                <td>{{item.middle_name}}</td>
+                <td>{{item.last_name}}</td>
                 <td>{{item.surname}}</td>
                 <td>{{item.gender}}</td>
-                <td>{{item.age}}</td>
-                <td>{{item.talent}}</td>
-                <td>{{item.adopter}}</td>
-                <td>{{item.sponser}}</td>
-                <td>{{item.joined_at | date}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.phone_number}}</td>
+                <td>{{item.id_number}}</td>
+                <td>{{item.location}}</td>
+                <td>{{item.marital_status}}</td>
+
+              
               </tr>
             </tbody>
           </table>
     </div>
-</div> -->
+</div>

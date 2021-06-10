@@ -1,1 +1,47 @@
 <ng-progress></ng-progress>
+<div class="container mt-3">
+    <div class="col-md-12">
+        <form>
+            <div>
+                <label for="formFileLg" class="form-label">Passport Image</label>
+                <input class="form-control form-control-lg" id="formFileLg" type="file" name='passport_image'>
+            </div>
+            <div class="mb-3 mt-3">
+                <input ngModel #first_name='ngModel' type="text" name='first_name' class="form-control" id="first_name" placeholder="First Name">
+                <div class="alert alert-danger" *ngIf='first_name.touched && !first_name.valid'>Firstname is required</div>
+            </div>
+            <div class="mb-3">
+                <input ngModel #last_name="ngModel" type="text" name='last_name' class="form-control" id="middle_name" placeholder="Last Name">
+                <div class="alert alert-danger" *ngIf='last_name.touched && !last_name.valid'>Lastname is required</div>
+            </div>
+            <div class="mb-3">
+                <input ngModel #surname="ngModel" type="text" name='surname' class="form-control" id="surname" placeholder="Surname">
+            </div>
+            <div class="mb-3">
+                <input ngModel #gender="ngModel" type="text" name='gender' class="form-control" id="gender" placeholder="Gender (Male, Female, Other)">
+                <div class="alert alert-danger" *ngIf='gender.touched && !gender.valid'>Gender is required</div>
+            </div>
+            <div class="mb-3">
+                <input ngModel #email="ngModel" type="email" name='email' class="form-control" id="email" placeholder="Email">
+                <div class="alert alert-danger" *ngIf='email.touched && !email.valid'>Email is required</div>
+            </div>
+            <div class="mb-3">
+                <input ngModel #phone_number="ngModel" type="number" name='phone_number' class="form-control" id="phone_number" placeholder="Phone Number">
+                <div class="alert alert-danger" *ngIf='phone_number.touched && !phone_number.valid'>Phone Number is required</div>
+            </div>
+            <div class="mb-3">
+                <input ngModel #id_number="ngModel" type="number" name='id_number' class="form-control" id="id_number" placeholder="ID Number">
+                <div class="alert alert-danger" *ngIf='id_number.touched && !id_number.valid'>ID Number is required</div>
+            </div>
+            <div class="mb-3">
+                <input ngModel #location="ngModel" type="text" name='location' class="form-control" id="location" placeholder="Location">
+                <div class="alert alert-danger" *ngIf='location.touched && !location.valid'>Location is required</div>
+            </div>
+            <div class="mb-3">
+                <input ngModel #marital_status="ngModel" type="text" name='location' class="form-control" id="marital_status" placeholder="Marital Status(Single, Maried, Divorced)">
+                <div class="alert alert-danger" *ngIf='marital_status.touched && !marital_status.valid'>Marital Status is required</div>
+            </div>
+            <button type="submit" class="btn btn-outline-success mt-3">Register Sponser</button>
+        </form>
+    </div>
+</div>

@@ -1,1 +1,48 @@
 <ng-progress></ng-progress>
+<div class="container mt-3">
+    <div class="col-md-12">
+        <form>
+            <div>
+                <label for="formFileLg" class="form-label">Passport Image</label>
+                <input class="form-control form-control-lg" id="formFileLg" type="file" name='passport_image'>
+            </div>
+            <div class="mb-3 mt-3">
+                <input ngModel #first_name='ngModel' type="text" name='first_name' class="form-control" id="first_name" placeholder="First Name">
+                <div class="alert alert-danger" *ngIf='first_name.touched && !first_name.valid'>Firstname is required</div>
+            </div>
+            <div class="mb-3">
+                <input ngModel #middle_name="ngModel" type="text" name='middle_name' class="form-control" id="middle_name" placeholder="Middle Name">
+                <div class="alert alert-danger" *ngIf='middle_name.touched && !middle_name.valid'>Middle name is required</div>
+            </div>
+            <div class="mb-3">
+                <input ngModel #surname="ngModel" type="text" name='surname' class="form-control" id="surname" placeholder="Surname">
+            </div>
+            <div class="mb-3">
+                <input ngModel #age="ngModel" type="number" name='age' class="form-control" id="age" placeholder="Age">
+                <div class="alert alert-danger" *ngIf='age.touched && !age.valid'>Age is required</div>
+            </div>
+            <div class="mb-3">
+                <input ngModel #adopter="ngModel" type="text" name='adopter' class="form-control" id="adopter" placeholder="Adopter">
+            </div>
+            <div class="mb-3">
+                <input ngModel #sponser="ngModel" type="text" name='sponser' class="form-control" id="sponser" placeholder="Sponser">
+            </div>
+            <div class="mb-3">
+                <input ngModel #gender="ngModel" type="text" name='gender' class="form-control" id="gender" placeholder="Gender (Male, Female, Other)">
+                <div class="alert alert-danger" *ngIf='gender.touched && !gender.valid'>Gender is required</div>
+            </div>
+            <div class="mb-3">
+                <input ngModel #talent="ngModel" type="text" name='talent' class="form-control" id="talent" placeholder="Talent">
+            </div>
+            <div>
+                <label for="formFileLg" class="form-label">Medical Records</label>
+                <input ngModel #medical_records="ngModel" name='medical_records' class="form-control form-control-lg" id="formFileLg" type="file">
+            </div>
+            <div>
+                <label for="formFileLg" class="form-label">School Report</label>
+                <input ngModel #school_report="ngModel" name='school_report' class="form-control form-control-lg" id="formFileLg" type="file">
+            </div>
+            <button type="submit" class="btn btn-outline-success mt-3">Register Child</button>
+        </form>
+    </div>
+</div>

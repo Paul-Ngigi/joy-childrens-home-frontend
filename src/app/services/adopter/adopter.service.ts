@@ -24,12 +24,12 @@ export class AdopterService {
     return this.http.get(`${url}${id}/`);
   }
 
-  create(child: Adopter) {
-    return this.http.post(url, child)
+  create(adopter: Adopter) {
+    return this.http.post(url, adopter)
   }
 
-  update(id: any, child: Adopter) {
-    return this.http.put(`${updateUrl}${id}/`, child)
+  update(id: any, adopter: Adopter) {
+    return this.http.put(`${updateUrl}${id}/`, adopter)
   }
 
 

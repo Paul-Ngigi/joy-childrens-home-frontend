@@ -4,13 +4,19 @@ import { RouterModule, Routes } from '@angular/router';
 import { ChildrenComponent } from './components/children/children.component'
 import { SponsersComponent } from './components/sponsers/sponsers.component'
 import { AdoptersComponent } from './components/adopters/adopters.component'
+import { AddAdopterComponent } from './components/add-adopter/add-adopter.component'
+import { AddChildComponent } from './components/add-child/add-child.component'
+import { AddSponserComponent } from './components/add-sponser/add-sponser.component'
 import { NotFoundComponent } from './components/not-found/not-found.component'
 
 
 const routes: Routes = [
-  {path: 'children', component: ChildrenComponent},
-  {path: 'adopters', component: AdoptersComponent},
-  {path: 'sponsers', component: SponsersComponent},
+  { path: 'children', component: ChildrenComponent },
+  { path: 'register-child', component: AddChildComponent },
+  { path: 'adopters', component: AdoptersComponent },
+  { path: 'register-adopter', component: AddAdopterComponent },
+  { path: 'sponsers', component: SponsersComponent },
+  { path: 'register-sponser', component: AddSponserComponent },
   { path: '**', component: NotFoundComponent },
 
   // { path: '', redirectTo:"", pathMatch:"full"},

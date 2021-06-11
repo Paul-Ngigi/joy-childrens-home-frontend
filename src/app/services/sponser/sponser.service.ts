@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Sponser } from '../../interfaces/sponser'
-import { Adopter } from 'src/app/interfaces/adopter';
 
 
 
@@ -25,12 +24,12 @@ export class SponserService {
     return this.http.get(`${url}${id}/`);
   }
 
-  create(adopter: Adopter) {
-    return this.http.post(url, adopter)
+  create(sponser: Sponser) {
+    return this.http.post(url, sponser)
   }
 
-  update(id: any, adopter: Adopter) {
-    return this.http.put(`${updateUrl}${id}/`, adopter)
+  update(id: any, sponser: Sponser) {
+    return this.http.put(`${updateUrl}${id}/`, sponser)
   }
 
 

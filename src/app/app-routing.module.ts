@@ -12,6 +12,8 @@ import { AddChildComponent } from './components/add-child/add-child.component'
 import { AddSponserComponent } from './components/add-sponser/add-sponser.component'
 import { NotFoundComponent } from './components/not-found/not-found.component'
 import { ChildDetailsComponent } from './components/child-details/child-details.component'
+import { SponserDetailsComponent } from './components/sponser-details/sponser-details.component'
+import { AdopterDetailsComponent } from './components/adopter-details/adopter-details.component'
 
 
 const routes: Routes = [
@@ -21,8 +23,10 @@ const routes: Routes = [
   { path: 'child/:id', component: ChildDetailsComponent },
   { path: 'register-child', component: AddChildComponent },
   { path: 'adopters', component: AdoptersComponent },
+  { path: 'adopter/:id', component: AdopterDetailsComponent },
   { path: 'register-adopter', component: AddAdopterComponent },
   { path: 'sponsers', component: SponsersComponent },
+  { path: 'sponser/:id', component: SponserDetailsComponent },
   { path: 'register-sponser', component: AddSponserComponent },
   { path: '**', component: NotFoundComponent },
 

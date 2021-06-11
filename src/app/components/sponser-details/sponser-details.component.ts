@@ -16,10 +16,10 @@ export class SponserDetailsComponent implements OnInit {
   constructor(private sponserservice:SponserService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    this.getAdopter(this.route.snapshot.paramMap.get('id'));
+    this.getSponser(this.route.snapshot.paramMap.get('id'));
   }
 
-  getAdopter(id:any | null){
+  getSponser(id:any | null){
     this.sponserservice.getOne(id).subscribe(data=>{
       this.sponserservice = data;
       console.log(data);

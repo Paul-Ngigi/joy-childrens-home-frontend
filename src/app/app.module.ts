@@ -17,6 +17,9 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home/home.component';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { ChildDetailsComponent } from './components/child-details/child-details.component';
+import { SponserDetailsComponent } from './components/sponser-details/sponser-details.component';
+import { AdopterDetailsComponent } from './components/adopter-details/adopter-details.component';
 
 
 @NgModule({
@@ -32,6 +35,9 @@ import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
     NavbarComponent,
     NotFoundComponent,
     HomeComponent,
+    ChildDetailsComponent,
+    SponserDetailsComponent,
+    AdopterDetailsComponent,
   ],
   imports: [
     BrowserModule,

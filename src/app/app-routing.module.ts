@@ -11,12 +11,14 @@ import { AddAdopterComponent } from './components/add-adopter/add-adopter.compon
 import { AddChildComponent } from './components/add-child/add-child.component'
 import { AddSponserComponent } from './components/add-sponser/add-sponser.component'
 import { NotFoundComponent } from './components/not-found/not-found.component'
+import { ChildDetailsComponent } from './components/child-details/child-details.component'
 
 
 const routes: Routes = [
   { path: 'auth', component: AuthenticationComponent },
   { path: '', component: HomeComponent },
   { path: 'children', component: ChildrenComponent },
+  { path: 'child/:id', component: ChildDetailsComponent },
   { path: 'register-child', component: AddChildComponent },
   { path: 'adopters', component: AdoptersComponent },
   { path: 'register-adopter', component: AddAdopterComponent },
